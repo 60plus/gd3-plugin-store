@@ -1,0 +1,68 @@
+name: Add Plugin to Store
+description: Submit your plugin for inclusion in the official store
+title: \"[Plugin]: \"
+labels: [\"new-plugin\"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Want your plugin listed in the GD3 Plugin Store? Fill in the details below.
+        Your plugin must be packaged as a ZIP with a valid plugin.json manifest.
+        See [gd3-plugin-template](https://github.com/60plus/gd3-plugin-template) for how to build plugins.
+  - type: input
+    id: name
+    attributes:
+      label: Plugin Name
+      placeholder: \"My Awesome Plugin\"
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Plugin Type
+      options:
+        - theme
+        - metadata
+        - lifecycle
+        - widget
+        - download
+        - library
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What does your plugin do?
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: Source Repository
+      description: Link to the plugin source code
+      placeholder: \"https://github.com/user/my-plugin\"
+    validations:
+      required: true
+  - type: input
+    id: download
+    attributes:
+      label: Download URL
+      description: Direct link to the plugin ZIP file
+      placeholder: \"https://github.com/user/my-plugin/releases/download/v1.0.0/my-plugin.zip\"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      placeholder: \"1.0.0\"
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Attach or link screenshots showing your plugin in action
+    validations:
+      required: false
