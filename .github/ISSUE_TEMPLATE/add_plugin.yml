@@ -1,7 +1,7 @@
 name: Add Plugin to Store
 description: Submit your plugin for inclusion in the official store
-title: \"[Plugin]: \"
-labels: [\"new-plugin\"]
+title: '[Plugin]: '
+labels: ['new-plugin']
 body:
   - type: markdown
     attributes:
@@ -13,7 +13,7 @@ body:
     id: name
     attributes:
       label: Plugin Name
-      placeholder: \"My Awesome Plugin\"
+      placeholder: My Awesome Plugin
     validations:
       required: true
   - type: dropdown
@@ -41,7 +41,7 @@ body:
     attributes:
       label: Source Repository
       description: Link to the plugin source code
-      placeholder: \"https://github.com/user/my-plugin\"
+      placeholder: https://github.com/user/my-plugin
     validations:
       required: true
   - type: input
@@ -49,14 +49,14 @@ body:
     attributes:
       label: Download URL
       description: Direct link to the plugin ZIP file
-      placeholder: \"https://github.com/user/my-plugin/releases/download/v1.0.0/my-plugin.zip\"
+      placeholder: https://github.com/user/my-plugin/releases/download/v1.0.0/my-plugin.zip
     validations:
       required: true
   - type: input
     id: version
     attributes:
       label: Version
-      placeholder: \"1.0.0\"
+      placeholder: '1.0.0'
     validations:
       required: true
   - type: textarea
