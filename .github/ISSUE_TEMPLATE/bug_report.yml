@@ -1,0 +1,70 @@
+name: Bug Report
+description: Something is not working as expected
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please search existing issues first to avoid duplicates.
+  - type: input
+    id: plugin
+    attributes:
+      label: Plugin
+      description: Which plugin is affected?
+      placeholder: "e.g. NEON HORIZON, PPE.pl Metadata, Description Translator"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Plugin Version
+      description: What version of the plugin are you running?
+      placeholder: "e.g. 1.2.5"
+    validations:
+      required: true
+  - type: input
+    id: gd-version
+    attributes:
+      label: GamesDownloader Version
+      description: What version of GamesDownloader are you running?
+      placeholder: "e.g. 3.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened? What did you expect to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this bug?
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: If applicable, add screenshots to help explain the problem.
+    validations:
+      required: false
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      options:
+        - Chrome
+        - Firefox
+        - Edge
+        - Safari
+        - Other
+    validations:
+      required: false
