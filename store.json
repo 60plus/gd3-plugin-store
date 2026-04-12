@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "name": "GD3 Official Plugin Store",
+  "description": "Official plugin repository for GamesDownloader V3",
+  "plugins": [
+    {
+      "id": "neon-horizon",
+      "name": "NEON HORIZON Theme",
+      "description": "Cyberpunk theme with Steam Big Picture library views, Colorful Pop couch mode with game carousel, 8 color skins, and full gamepad support.",
+      "version": "1.2.5",
+      "author": "60plus",
+      "type": "theme",
+      "category": "Theme",
+      "icon": "https://raw.githubusercontent.com/60plus/gd3-plugin-store/main/icons/nh-logo.svg",
+      "screenshots": [
+        "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss1-home.jpg",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss2-couch.jpg",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss3-library.jpg",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss4-detail.jpg",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss5-metadata.jpg"
+      ],
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/neon-horizon-v1.2.5.zip",
+      "downloadSize": 103683732,
+      "gdVersionMin": "3.0.0",
+      "repository": "https://github.com/60plus/gd3-plugin-store",
+      "changelog": "v1.2.5: Tighter menu hint icon spacing\nv1.2.4: Menu hint with gamepad icons\nv1.2.3: Update notification badge\nv1.2.0: Per-game platform color\nv1.1.9: Couch i18n + locale desc",
+      "updated": "2026-04-12"
+    },
+    {
+      "id": "ppe-metadata",
+      "name": "PPE.pl Metadata Scraper",
+      "description": "Fetches game metadata, ratings, and descriptions from PPE.pl (Polish gaming website).",
+      "version": "1.0.2",
+      "author": "60plus",
+      "type": "metadata",
+      "category": "Metadata",
+      "icon": "https://raw.githubusercontent.com/60plus/gd3-plugin-store/main/icons/ppe-logo.png",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/ppe-metadata-v1.0.2/ppe-metadata-v1.0.2.zip",
+      "downloadSize": 9165,
+      "gdVersionMin": "3.0.0",
+      "repository": "https://github.com/60plus/gd3-plugin-store",
+      "changelog": "v1.0.2: Update flow test\nv1.0.1: Re-packaged",
+      "updated": "2026-04-12"
+    },
+    {
+      "id": "gd3-translator",
+      "name": "Description Translator",
+      "description": "Translates game descriptions between 26 languages using Google Translate API.",
+      "version": "1.0.2",
+      "author": "60plus",
+      "type": "lifecycle",
+      "category": "Tools",
+      "icon": "https://raw.githubusercontent.com/60plus/gd3-plugin-store/main/icons/translator-logo.png",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/gd3-translator-v1.0.2/gd3-translator-v1.0.2.zip",
+      "downloadSize": 1468511,
+      "gdVersionMin": "3.0.0",
+      "repository": "https://github.com/60plus/gd3-plugin-store",
+      "changelog": "v1.0.2: Update flow test\nv1.0.1: Re-packaged",
+      "updated": "2026-04-12"
+    }
+  ]
+}
