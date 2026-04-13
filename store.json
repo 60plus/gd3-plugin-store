@@ -59,6 +59,23 @@
       "repository": "https://github.com/60plus/gd3-plugin-store",
       "changelog": "v1.0.2: Update flow test\nv1.0.1: Re-packaged",
       "updated": "2026-04-12"
+    },
+    {
+      "id": "thegamesdb",
+      "name": "TheGamesDB",
+      "description": "Cover art, fanart, logos and metadata from TheGamesDB.net - the open video game database. Provides boxart covers, fanart backgrounds, clearlogo images and game metadata.",
+      "version": "1.0.0",
+      "author": "60plus",
+      "type": "metadata",
+      "category": "Metadata",
+      "icon": "https://raw.githubusercontent.com/60plus/gd3-plugin-store/main/icons/thegamesdb-logo.png",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/thegamesdb-v1.0.0/thegamesdb-1.0.0.zip",
+      "downloadSize": 23972,
+      "gdVersionMin": "3.0.0",
+      "repository": "https://github.com/60plus/gd3-plugin-store",
+      "changelog": "v1.0.0: Initial release - covers, fanart, clearlogo, metadata search",
+      "updated": "2026-04-14"
     }
   ]
 }
