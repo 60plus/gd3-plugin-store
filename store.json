@@ -7,7 +7,7 @@
       "id": "neon-horizon",
       "name": "NEON HORIZON Theme",
       "description": "Cyberpunk theme with Steam Big Picture library views, Colorful Pop couch mode with game carousel, 8 color skins, and full gamepad support.",
-      "version": "1.2.6",
+      "version": "1.2.7",
       "author": "60plus",
       "type": "theme",
       "category": "Theme",
@@ -19,11 +19,11 @@
         "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss4-detail.jpg",
         "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss5-metadata.jpg"
       ],
-      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.6/neon-horizon-v1.2.6.zip",
-      "downloadSize": 103683899,
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.7/neon-horizon-v1.2.7.zip",
+      "downloadSize": 103683951,
       "gdVersionMin": "3.0.0",
       "repository": "https://github.com/60plus/gd3-plugin-store",
-      "changelog": "v1.2.6: Couch Mode tab in navbar\nv1.2.5: Menu hint icons, home spacing\nv1.2.3: Update notification badge\nv1.2.0: Per-game platform color\nv1.1.9: Couch i18n + locale desc",
+      "changelog": "v1.2.7: Fix favorite platform from recently played\nv1.2.6: Couch Mode tab in navbar\nv1.2.5: Menu hint icons, home spacing\nv1.2.3: Notification badge\nv1.2.0: Per-game platform color",
       "updated": "2026-04-13"
     },
     {
