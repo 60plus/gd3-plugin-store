@@ -68,7 +68,7 @@
       "author": "60plus",
       "type": "metadata",
       "category": "Metadata",
-      "icon": "https://raw.githubusercontent.com/60plus/gd3-plugin-store/main/icons/thegamesdb-logo.png",
+      "icon": "https://github.com/60plus/gd3-plugin-store/raw/main/icons/thegamesdb-logo.png",
       "screenshots": [],
       "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/thegamesdb-v1.0.0/thegamesdb-1.0.0.zip",
       "downloadSize": 23972,
