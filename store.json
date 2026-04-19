@@ -7,7 +7,7 @@
       "id": "neon-horizon",
       "name": "NEON HORIZON Theme",
       "description": "Cyberpunk theme with Steam Big Picture library views, Colorful Pop couch mode with game carousel, 8 color skins, and full gamepad support.",
-      "version": "1.2.7",
+      "version": "1.3.1",
       "author": "60plus",
       "type": "theme",
       "category": "Theme",
@@ -19,12 +19,12 @@
         "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss4-detail.jpg",
         "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss5-metadata.jpg"
       ],
-      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.7/neon-horizon-v1.2.7.zip",
-      "downloadSize": 103683951,
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.3.1/neon-horizon-v1.3.1.zip",
+      "downloadSize": 103684312,
       "gdVersionMin": "3.0.0",
       "repository": "https://github.com/60plus/gd3-plugin-store",
-      "changelog": "v1.2.7: Fix favorite platform from recently played\nv1.2.6: Couch Mode tab in navbar\nv1.2.5: Menu hint icons, home spacing\nv1.2.3: Notification badge\nv1.2.0: Per-game platform color",
-      "updated": "2026-04-13"
+      "changelog": "v1.3.1: Fix mix-blend-mode leak (add isolation:isolate to .nh-shell and .cp)\nv1.3.0: Polish diacritics, video volume fix, EJS Threads toggle\nv1.2.7: Fix favorite platform from recently played\nv1.2.6: Couch Mode tab in navbar\nv1.2.5: Menu hint icons, home spacing",
+      "updated": "2026-04-19"
     },
     {
       "id": "ppe-metadata",
