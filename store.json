@@ -20,7 +20,7 @@
         "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss5-metadata.jpg"
       ],
       "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.3.1/neon-horizon-v1.3.1.zip",
-      "downloadSize": 103684312,
+      "downloadSize": 103669076,
       "gdVersionMin": "3.0.0",
       "repository": "https://github.com/60plus/gd3-plugin-store",
       "changelog": "v1.3.1: Fix mix-blend-mode leak (add isolation:isolate to .nh-shell and .cp)\nv1.3.0: Polish diacritics, video volume fix, EJS Threads toggle\nv1.2.7: Fix favorite platform from recently played\nv1.2.6: Couch Mode tab in navbar\nv1.2.5: Menu hint icons, home spacing",
