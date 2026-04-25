@@ -1,0 +1,86 @@
+name: Discord plugin announce
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'store.json'
+
+jobs:
+  announce:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (with previous commit)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect new plugins
+        id: diff
+        run: |
+          # Compare store.json between HEAD and HEAD~1, find newly added plugins
+          if git rev-parse HEAD~1 >/dev/null 2>&1; then
+            git show HEAD~1:store.json > /tmp/old_store.json 2>/dev/null || echo '{"plugins":[]}' > /tmp/old_store.json
+          else
+            echo '{"plugins":[]}' > /tmp/old_store.json
+          fi
+
+          OLD_IDS=$(jq -r '.plugins[].id' /tmp/old_store.json | sort -u)
+          NEW_IDS=$(jq -r '.plugins[].id' store.json | sort -u)
+          ADDED=$(comm -13 <(echo "$OLD_IDS") <(echo "$NEW_IDS"))
+
+          if [ -z "$ADDED" ]; then
+            echo "No new plugins detected"
+            echo "has_new=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_new=true" >> $GITHUB_OUTPUT
+            echo "$ADDED" > /tmp/new_plugins.txt
+            echo "New plugins: $ADDED"
+          fi
+
+      - name: Post each new plugin to Discord
+        if: steps.diff.outputs.has_new == 'true'
+        env:
+          WEBHOOK_URL: ${{ secrets.DISCORD_PLUGIN_WEBHOOK }}
+        run: |
+          while IFS= read -r plugin_id; do
+            [ -z "$plugin_id" ] && continue
+
+            # Extract plugin metadata from store.json
+            PLUGIN=$(jq --arg id "$plugin_id" '.plugins[] | select(.id == $id)' store.json)
+            NAME=$(echo "$PLUGIN" | jq -r '.name // .id')
+            VERSION=$(echo "$PLUGIN" | jq -r '.version // "unknown"')
+            AUTHOR=$(echo "$PLUGIN" | jq -r '.author // "anonymous"')
+            TYPE=$(echo "$PLUGIN" | jq -r '.type // "plugin"')
+            DESC=$(echo "$PLUGIN" | jq -r '.description // ""' | head -c 500)
+            ICON=$(echo "$PLUGIN" | jq -r '.icon // .logo // ""')
+
+            PAYLOAD=$(jq -n \
+              --arg name "$NAME" \
+              --arg version "$VERSION" \
+              --arg author "$AUTHOR" \
+              --arg type "$TYPE" \
+              --arg desc "$DESC" \
+              --arg icon "$ICON" \
+              '{
+                content: ":package: **New plugin in store!**",
+                embeds: [{
+                  title: $name,
+                  description: $desc,
+                  color: 5814783,
+                  fields: [
+                    { name: "Type", value: $type, inline: true },
+                    { name: "Version", value: $version, inline: true },
+                    { name: "Author", value: $author, inline: true }
+                  ],
+                  thumbnail: (if $icon == "" then null else { url: $icon } end),
+                  footer: { text: "Install via Settings - Plugin Store - Browse" }
+                }]
+              }')
+
+            curl -X POST -H "Content-Type: application/json" \
+              -d "$PAYLOAD" \
+              "$WEBHOOK_URL"
+
+            sleep 1
+          done < /tmp/new_plugins.txt
