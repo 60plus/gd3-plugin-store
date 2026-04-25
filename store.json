@@ -23,8 +23,8 @@
       "downloadSize": 103669076,
       "gdVersionMin": "3.0.0",
       "repository": "https://github.com/60plus/gd3-plugin-store",
-      "changelog": "v1.3.1: Fix mix-blend-mode leak (add isolation:isolate to .nh-shell and .cp)\nv1.3.0: Polish diacritics, video volume fix, EJS Threads toggle\nv1.2.7: Fix favorite platform from recently played\nv1.2.6: Couch Mode tab in navbar\nv1.2.5: Menu hint icons, home spacing",
-      "updated": "2026-04-19"
+      "changelog": "v1.3.1 (re-packaged 2026-04-25): Clean ZIP with forward-slash paths (was Windows-built with backslashes that broke Couch Mode assets on fresh installs)\nv1.3.1: Fix mix-blend-mode leak (add isolation:isolate to .nh-shell and .cp)\nv1.3.0: Polish diacritics, video volume fix, EJS Threads toggle\nv1.2.7: Fix favorite platform from recently played\nv1.2.6: Couch Mode tab in navbar\nv1.2.5: Menu hint icons, home spacing",
+      "updated": "2026-04-25"
     },
     {
       "id": "ppe-metadata",
