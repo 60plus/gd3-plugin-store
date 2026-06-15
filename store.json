@@ -76,6 +76,23 @@
       "repository": "https://github.com/60plus/gd3-plugin-store",
       "changelog": "v1.0.0: Initial release - covers, fanart, clearlogo, metadata search",
       "updated": "2026-04-14"
+    },
+    {
+      "id": "steam-deck-compatibility",
+      "name": "Steam Deck Compatibility",
+      "description": "Shows ProtonDB Steam Deck compatibility (platinum/gold/silver/bronze/borked) as a colored Steam Deck badge on Games Library covers and as a row on the game detail page. Works across all layouts (Modern, Classic, Neon Horizon) and future themes, since covers are matched by data, not markup. Library titles are matched to Steam, the ProtonDB tier is fetched once and cached on the server. Ambiguous matches can be corrected from a candidate picker.",
+      "version": "1.0.1",
+      "author": "60plus",
+      "type": "metadata",
+      "category": "Metadata",
+      "icon": "https://github.com/60plus/gd3-plugin-store/raw/main/icons/steam-deck-logo.svg",
+      "screenshots": [],
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/steam-deck-compatibility-v1.0.1/steam-deck-compatibility-v1.0.1.zip",
+      "downloadSize": 15334,
+      "gdVersionMin": "3.0.0",
+      "repository": "https://github.com/60plus/gd3-plugin-store",
+      "changelog": "v1.0.1: ProtonDB (SteamDB/Algolia) search, manual search + Steam appid fallback, Steam Deck tab in the metadata editor, theme-agnostic cover badges.",
+      "updated": "2026-06-15"
     }
   ]
 }
