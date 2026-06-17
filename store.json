@@ -81,7 +81,7 @@
       "id": "steam-deck-compatibility",
       "name": "Steam Deck Compatibility",
       "description": "Shows ProtonDB Steam Deck compatibility (platinum/gold/silver/bronze/borked) as a colored Steam Deck badge on Games Library covers and, on the game detail page, the ProtonDB tier plus Valve's official Deck Verified status (Verified/Playable/Unsupported) with an expandable list of the verified criteria. The ProtonDB tier and Deck status can also be set by hand (with editable criteria notes) for games missing from ProtonDB. Works across all layouts and future themes; titles are matched to Steam and cached on the server. Available in 8 languages.",
-      "version": "1.0.3",
+      "version": "1.0.4",
       "author": "60plus",
       "type": "metadata",
       "category": "Metadata",
@@ -92,12 +92,12 @@
         "https://github.com/60plus/gd3-plugin-store/releases/download/steam-deck-compatibility-v1.0.3/screenshot3.png",
         "https://github.com/60plus/gd3-plugin-store/releases/download/steam-deck-compatibility-v1.0.3/screenshot4.png"
       ],
-      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/steam-deck-compatibility-v1.0.3/steam-deck-compatibility-v1.0.3.zip",
-      "downloadSize": 25509,
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/steam-deck-compatibility-v1.0.4/steam-deck-compatibility-v1.0.4.zip",
+      "downloadSize": 27077,
       "gdVersionMin": "1.0.9",
       "repository": "https://github.com/60plus/gd3-plugin-store",
-      "changelog": "v1.0.3: Deck Verified status (Valve certification) with expandable criteria; manual override of the ProtonDB tier and Deck status with editable criteria notes; i18n (8 languages). Requires GamesDownloader v1.0.4+ for saving manual edits.\nv1.0.2: Store icon fix (served via the icon proxy) and store screenshots.\nv1.0.1: ProtonDB (SteamDB/Algolia) search, manual search + Steam appid fallback, Steam Deck tab in the metadata editor, theme-agnostic cover badges.",
-      "updated": "2026-06-16"
+      "changelog": "v1.0.4: Split into two separate rows - ProtonDB tier and the Valve Deck Verified status - rendered natively by the active theme via the GamesDownloader v1.0.10 registerDetailRow API; matches every layout (Modern, Classic and future themes). Falls back to the single combined row on older cores.\nv1.0.3: Deck Verified status (Valve certification) with expandable criteria; manual override of the ProtonDB tier and Deck status with editable criteria notes; i18n (8 languages). Requires GamesDownloader v1.0.4+ for saving manual edits.\nv1.0.2: Store icon fix (served via the icon proxy) and store screenshots.\nv1.0.1: ProtonDB (SteamDB/Algolia) search, manual search + Steam appid fallback, Steam Deck tab in the metadata editor, theme-agnostic cover badges.",
+      "updated": "2026-06-17"
     }
   ]
 }
