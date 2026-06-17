@@ -21,7 +21,7 @@
       ],
       "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.3.1/neon-horizon-v1.3.1.zip",
       "downloadSize": 103669076,
-      "gdVersionMin": "3.0.0",
+      "gdVersionMin": "1.0.9",
       "repository": "https://github.com/60plus/gd3-plugin-store",
       "changelog": "v1.3.1 (re-packaged 2026-04-25): Clean ZIP with forward-slash paths (was Windows-built with backslashes that broke Couch Mode assets on fresh installs)\nv1.3.1: Fix mix-blend-mode leak (add isolation:isolate to .nh-shell and .cp)\nv1.3.0: Polish diacritics, video volume fix, EJS Threads toggle\nv1.2.7: Fix favorite platform from recently played\nv1.2.6: Couch Mode tab in navbar\nv1.2.5: Menu hint icons, home spacing",
       "updated": "2026-04-25"
@@ -38,7 +38,7 @@
       "screenshots": [],
       "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/ppe-metadata-v1.0.2/ppe-metadata-v1.0.2.zip",
       "downloadSize": 9165,
-      "gdVersionMin": "3.0.0",
+      "gdVersionMin": "1.0.9",
       "repository": "https://github.com/60plus/gd3-plugin-store",
       "changelog": "v1.0.2: Update flow test\nv1.0.1: Re-packaged",
       "updated": "2026-04-12"
@@ -55,7 +55,7 @@
       "screenshots": [],
       "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/gd3-translator-v1.0.2/gd3-translator-v1.0.2.zip",
       "downloadSize": 1468511,
-      "gdVersionMin": "3.0.0",
+      "gdVersionMin": "1.0.9",
       "repository": "https://github.com/60plus/gd3-plugin-store",
       "changelog": "v1.0.2: Update flow test\nv1.0.1: Re-packaged",
       "updated": "2026-04-12"
@@ -72,7 +72,7 @@
       "screenshots": [],
       "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/thegamesdb-v1.0.0/thegamesdb-1.0.0.zip",
       "downloadSize": 23972,
-      "gdVersionMin": "3.0.0",
+      "gdVersionMin": "1.0.9",
       "repository": "https://github.com/60plus/gd3-plugin-store",
       "changelog": "v1.0.0: Initial release - covers, fanart, clearlogo, metadata search",
       "updated": "2026-04-14"
@@ -94,7 +94,7 @@
       ],
       "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/steam-deck-compatibility-v1.0.3/steam-deck-compatibility-v1.0.3.zip",
       "downloadSize": 25509,
-      "gdVersionMin": "3.0.0",
+      "gdVersionMin": "1.0.9",
       "repository": "https://github.com/60plus/gd3-plugin-store",
       "changelog": "v1.0.3: Deck Verified status (Valve certification) with expandable criteria; manual override of the ProtonDB tier and Deck status with editable criteria notes; i18n (8 languages). Requires GamesDownloader v1.0.4+ for saving manual edits.\nv1.0.2: Store icon fix (served via the icon proxy) and store screenshots.\nv1.0.1: ProtonDB (SteamDB/Algolia) search, manual search + Steam appid fallback, Steam Deck tab in the metadata editor, theme-agnostic cover badges.",
       "updated": "2026-06-16"
