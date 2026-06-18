@@ -7,7 +7,7 @@
       "id": "neon-horizon",
       "name": "NEON HORIZON Theme",
       "description": "Cyberpunk theme with Steam Big Picture library views, Colorful Pop couch mode with game carousel, 8 color skins, and full gamepad support.",
-      "version": "1.3.1",
+      "version": "1.3.2",
       "author": "60plus",
       "type": "theme",
       "category": "Theme",
@@ -19,12 +19,12 @@
         "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss4-detail.jpg",
         "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss5-metadata.jpg"
       ],
-      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.3.1/neon-horizon-v1.3.1.zip",
-      "downloadSize": 103669076,
-      "gdVersionMin": "1.0.9",
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.3.2/neon-horizon-v1.3.2.zip",
+      "downloadSize": 103670378,
+      "gdVersionMin": "1.0.11",
       "repository": "https://github.com/60plus/gd3-plugin-store",
-      "changelog": "v1.3.1 (re-packaged 2026-04-25): Clean ZIP with forward-slash paths (was Windows-built with backslashes that broke Couch Mode assets on fresh installs)\nv1.3.1: Fix mix-blend-mode leak (add isolation:isolate to .nh-shell and .cp)\nv1.3.0: Polish diacritics, video volume fix, EJS Threads toggle\nv1.2.7: Fix favorite platform from recently played\nv1.2.6: Couch Mode tab in navbar\nv1.2.5: Menu hint icons, home spacing",
-      "updated": "2026-04-25"
+      "changelog": "v1.3.2: Data-driven libraries - navigation, recently-added rows and library views now follow the GamesDownloader v1.0.11 library registry (custom libraries, per-user visibility, ordering and access). Requires GamesDownloader v1.0.11+.\nv1.3.1 (re-packaged 2026-04-25): Clean ZIP with forward-slash paths (was Windows-built with backslashes that broke Couch Mode assets on fresh installs)\nv1.3.1: Fix mix-blend-mode leak (add isolation:isolate to .nh-shell and .cp)\nv1.3.0: Polish diacritics, video volume fix, EJS Threads toggle\nv1.2.7: Fix favorite platform from recently played\nv1.2.6: Couch Mode tab in navbar\nv1.2.5: Menu hint icons, home spacing",
+      "updated": "2026-06-18"
     },
     {
       "id": "ppe-metadata",
