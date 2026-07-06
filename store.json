@@ -98,6 +98,35 @@
       "repository": "https://github.com/60plus/gd3-plugin-store",
       "changelog": "v1.0.5: Rating aggregation compatibility - the plugin declares its entries as badge-style (tiers/statuses, not numeric scores) via the metadata_provider_ratings hook, so ProtonDB tiers and Deck Verified statuses stay badges and never feed the new aggregate rating. Requires GamesDownloader v1.0.15+.\nv1.0.4: Split into two separate rows - ProtonDB tier and the Valve Deck Verified status - rendered natively by the active theme via the GamesDownloader v1.0.10 registerDetailRow API; matches every layout (Modern, Classic and future themes). Falls back to the single combined row on older cores.\nv1.0.3: Deck Verified status (Valve certification) with expandable criteria; manual override of the ProtonDB tier and Deck status with editable criteria notes; i18n (8 languages). Requires GamesDownloader v1.0.4+ for saving manual edits.\nv1.0.2: Store icon fix (served via the icon proxy) and store screenshots.\nv1.0.1: ProtonDB (SteamDB/Algolia) search, manual search + Steam appid fallback, Steam Deck tab in the metadata editor, theme-agnostic cover badges.",
       "updated": "2026-07-06"
+    },
+    {
+      "id": "vapor",
+      "name": "Vapor Theme",
+      "description": "Storefront theme in the spirit of big game launchers: hero carousel with trailers, category shelves, rich hover cards and animated tiles. Includes its own Steam-style game and GOG detail pages, a complete Retro experience (console picker, per-platform libraries, ROM detail pages with in-browser play) and full global search. 7 color skins, translated to 8 languages.",
+      "version": "1.0.0",
+      "author": "60plus",
+      "type": "theme",
+      "category": "Theme",
+      "icon": "https://raw.githubusercontent.com/60plus/gd3-plugin-store/main/icons/vapor-logo.svg",
+      "screenshots": [
+        "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.0/ShowcaseALL.webm",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.0/Home.png",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.0/Store-GOG.png",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.0/Retro.png",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.0/Collections.png"
+      ],
+      "videos": [
+        "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.0/Home.webp",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.0/LibraryCollection.webp",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.0/Retro.webp",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.0/Store-GOG.webp"
+      ],
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.0/vapor-v1.0.0.zip",
+      "downloadSize": 148494,
+      "gdVersionMin": "1.0.15",
+      "repository": "https://github.com/60plus/gd3-vapor",
+      "updated": "2026-07-06",
+      "changelog": "v1.0.0: Initial release - storefront home (hero carousel with local trailers, category shelves, collection showcases), Steam-style game and GOG detail pages, complete Retro experience (console picker with fanart hero, platform libraries, ROM detail with in-browser play, scrape-all with a fill-missing mode), global search and 7 color skins in 8 languages. Requires GamesDownloader v1.0.15+."
     }
   ]
 }
