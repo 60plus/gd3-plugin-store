@@ -55,6 +55,16 @@ jobs:
             DESC=$(echo "$PLUGIN" | jq -r '.description // ""' | head -c 500)
             ICON=$(echo "$PLUGIN" | jq -r '.icon // .logo // ""')
 
+            # Optional "videos" array in the entry: direct webm/mp4 links are
+            # appended to the plain message content, where Discord renders a
+            # playable preview for each (embeds cannot play video).
+            VIDEOS=$(echo "$PLUGIN" | jq -r '(.videos // [])[]' | head -4)
+            CONTENT=":package: **New plugin in store!**"
+            if [ -n "$VIDEOS" ]; then
+              CONTENT="$CONTENT
+          $VIDEOS"
+            fi
+
             PAYLOAD=$(jq -n \
               --arg name "$NAME" \
               --arg version "$VERSION" \
@@ -62,8 +72,9 @@ jobs:
               --arg type "$TYPE" \
               --arg desc "$DESC" \
               --arg icon "$ICON" \
+              --arg content "$CONTENT" \
               '{
-                content: ":package: **New plugin in store!**",
+                content: $content,
                 embeds: [{
                   title: $name,
                   description: $desc,
