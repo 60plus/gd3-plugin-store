@@ -7,7 +7,7 @@
       "id": "neon-horizon",
       "name": "NEON HORIZON Theme",
       "description": "Cyberpunk theme with Steam Big Picture library views, Colorful Pop couch mode with game carousel, 8 color skins, and full gamepad support.",
-      "version": "1.3.6",
+      "version": "1.3.7",
       "author": "60plus",
       "type": "theme",
       "category": "Theme",
@@ -19,12 +19,12 @@
         "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss4-detail.jpg",
         "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.2.5/ss5-metadata.jpg"
       ],
-      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.3.6/neon-horizon-v1.3.6.zip",
-      "downloadSize": 103676781,
-      "gdVersionMin": "1.0.17",
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/neon-horizon-v1.3.7/neon-horizon-v1.3.7.zip",
+      "downloadSize": 103677980,
+      "gdVersionMin": "1.0.23",
       "repository": "https://github.com/60plus/gd3-plugin-store",
-      "changelog": "v1.3.6: Library toolbar to add games by file upload, direct URL or torrent, each targeting the library you are viewing (GamesDownloader v1.0.17 library API).\nv1.3.5: About entry in the user menu (opens the shared About dialog on GamesDownloader v1.0.15+; the theme still works unchanged on older cores).\nv1.3.4: Collections - the collection cover now sits above the About and Details panels in the detail side, styled for Neon Horizon. Requires GamesDownloader v1.0.13+.\nv1.3.3: Collections - full collection detail page (About panel plus aggregated Details: developers, publishers, release years, platforms, languages, time-to-beat, rating, genres and game count) styled for Neon Horizon. Requires GamesDownloader v1.0.12+.\nv1.3.2: Data-driven libraries - navigation, recently-added rows and library views now follow the GamesDownloader v1.0.11 library registry (custom libraries, per-user visibility, ordering and access). Requires GamesDownloader v1.0.11+.\nv1.3.1 (re-packaged 2026-04-25): Clean ZIP with forward-slash paths (was Windows-built with backslashes that broke Couch Mode assets on fresh installs)\nv1.3.1: Fix mix-blend-mode leak (add isolation:isolate to .nh-shell and .cp)\nv1.3.0: Polish diacritics, video volume fix, EJS Threads toggle\nv1.2.7: Fix favorite platform from recently played\nv1.2.6: Couch Mode tab in navbar\nv1.2.5: Menu hint icons, home spacing",
-      "updated": "2026-07-08"
+      "changelog": "v1.3.7: GOG library Sync and bulk Clear Metadata on the GOG library toolbar (with a sync options dialog for auto-scrape and overwrite), plus a Dashboard entry in the user menu. Requires GamesDownloader v1.0.23+.\nv1.3.6: Library toolbar to add games by file upload, direct URL or torrent, each targeting the library you are viewing (GamesDownloader v1.0.17 library API).\nv1.3.5: About entry in the user menu (opens the shared About dialog on GamesDownloader v1.0.15+; the theme still works unchanged on older cores).\nv1.3.4: Collections - the collection cover now sits above the About and Details panels in the detail side, styled for Neon Horizon. Requires GamesDownloader v1.0.13+.\nv1.3.3: Collections - full collection detail page (About panel plus aggregated Details: developers, publishers, release years, platforms, languages, time-to-beat, rating, genres and game count) styled for Neon Horizon. Requires GamesDownloader v1.0.12+.\nv1.3.2: Data-driven libraries - navigation, recently-added rows and library views now follow the GamesDownloader v1.0.11 library registry (custom libraries, per-user visibility, ordering and access). Requires GamesDownloader v1.0.11+.\nv1.3.1 (re-packaged 2026-04-25): Clean ZIP with forward-slash paths (was Windows-built with backslashes that broke Couch Mode assets on fresh installs)\nv1.3.1: Fix mix-blend-mode leak (add isolation:isolate to .nh-shell and .cp)\nv1.3.0: Polish diacritics, video volume fix, EJS Threads toggle\nv1.2.7: Fix favorite platform from recently played\nv1.2.6: Couch Mode tab in navbar\nv1.2.5: Menu hint icons, home spacing",
+      "updated": "2026-07-12"
     },
     {
       "id": "ppe-metadata",
@@ -103,7 +103,7 @@
       "id": "vapor",
       "name": "Vapor Theme",
       "description": "Storefront theme in the spirit of big game launchers: hero carousel with trailers, category shelves, rich hover cards and animated tiles. Includes its own Steam-style game and GOG detail pages, a complete Retro experience (console picker, per-platform libraries, ROM detail pages with in-browser play) and full global search. 7 color skins, translated to 8 languages.",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "author": "60plus",
       "type": "theme",
       "category": "Theme",
@@ -121,12 +121,12 @@
         "https://i.postimg.cc/D043St1W/Retro.webp",
         "https://i.postimg.cc/SsvpNyYc/Store-GOG.webp"
       ],
-      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.2/vapor-v1.0.2.zip",
-      "downloadSize": 151820,
-      "gdVersionMin": "1.0.19",
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.3/vapor-v1.0.3.zip",
+      "downloadSize": 154394,
+      "gdVersionMin": "1.0.23",
       "repository": "https://github.com/60plus/gd3-vapor",
-      "updated": "2026-07-11",
-      "changelog": "v1.0.2: Package files - bundle a game's downloaded files into archives (per platform, extras, DLC, or one combined archive) from the Games and GOG detail, through the shared GamesDownloader v1.0.19 packaging API.\nv1.0.1: Add game, upload file, upload from URL and add-via-torrent now target the custom library you are viewing (its folder and membership), through the shared GamesDownloader v1.0.17 library API.\nv1.0.0: Initial release - storefront home (hero carousel with local trailers, category shelves, collection showcases), Steam-style game and GOG detail pages, complete Retro experience (console picker with fanart hero, platform libraries, ROM detail with in-browser play, scrape-all with a fill-missing mode), global search and 7 color skins in 8 languages. Requires GamesDownloader v1.0.15+."
+      "updated": "2026-07-12",
+      "changelog": "v1.0.3: GOG library Sync and bulk Clear Metadata in the store and GOG library control bar, a per-game Clear Metadata action, a delete that asks whether to also remove files, and a Dashboard entry in the user menu. Requires GamesDownloader v1.0.23+.\nv1.0.2: Package files - bundle a game's downloaded files into archives (per platform, extras, DLC, or one combined archive) from the Games and GOG detail, through the shared GamesDownloader v1.0.19 packaging API.\nv1.0.1: Add game, upload file, upload from URL and add-via-torrent now target the custom library you are viewing (its folder and membership), through the shared GamesDownloader v1.0.17 library API.\nv1.0.0: Initial release - storefront home (hero carousel with local trailers, category shelves, collection showcases), Steam-style game and GOG detail pages, complete Retro experience (console picker with fanart hero, platform libraries, ROM detail with in-browser play, scrape-all with a fill-missing mode), global search and 7 color skins in 8 languages. Requires GamesDownloader v1.0.15+."
     }
   ]
 }
