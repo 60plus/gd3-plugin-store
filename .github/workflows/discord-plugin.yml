@@ -65,6 +65,12 @@ jobs:
           $VIDEOS"
             fi
 
+            # Screenshots become a gallery: several embeds that share one url are
+            # merged by Discord into a single embed showing a grid of the images.
+            # Only still images qualify (webm/mp4 are handled by "videos" above).
+            SHOTS=$(echo "$PLUGIN" | jq -c '[.screenshots // [] | .[] | select(ascii_downcase | (endswith(".png") or endswith(".jpg") or endswith(".jpeg") or endswith(".webp") or endswith(".gif")))] | .[0:4]')
+            GURL=$(echo "$PLUGIN" | jq -r '.repository // "https://github.com/60plus/gd3-plugin-store"')
+
             PAYLOAD=$(jq -n \
               --arg name "$NAME" \
               --arg version "$VERSION" \
@@ -73,10 +79,13 @@ jobs:
               --arg desc "$DESC" \
               --arg icon "$ICON" \
               --arg content "$CONTENT" \
+              --arg gurl "$GURL" \
+              --argjson shots "$SHOTS" \
               '{
                 content: $content,
-                embeds: [{
+                embeds: ([{
                   title: $name,
+                  url: $gurl,
                   description: $desc,
                   color: 5814783,
                   fields: [
@@ -85,8 +94,9 @@ jobs:
                     { name: "Author", value: $author, inline: true }
                   ],
                   thumbnail: (if $icon == "" then null else { url: $icon } end),
+                  image: (if ($shots | length) > 0 then { url: $shots[0] } else null end),
                   footer: { text: "Install via Settings - Plugin Store - Browse" }
-                }]
+                }] + [ $shots[1:][] | { url: $gurl, image: { url: . } } ])
               }')
 
             curl -X POST -H "Content-Type: application/json" \
