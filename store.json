@@ -127,6 +127,27 @@
       "repository": "https://github.com/60plus/gd3-vapor",
       "updated": "2026-08-09",
       "changelog": "v1.0.6: a catalogue entry shows a Downloading state the moment a build is queued and flips to Open in library on its own once the build lands, matching the GamesDownloader 1.0.27 core download tray. Requires GamesDownloader 1.0.26.\nv1.0.5: arrange the storefront on the page - home, Retro, Store, your own libraries and a platform's page each get a handle per section with move, hide and big-card-side controls, plus Reset layout. Vapor takes the Home sections block out of Settings and replaces it on the page. Requires GamesDownloader 1.0.26.\nv1.0.4: correct per-section flip defaults on the home page and reorder-aware home sections (requires GamesDownloader 1.0.25).\nv1.0.3: GOG library Sync and bulk Clear Metadata in the store and GOG library control bar, a per-game Clear Metadata action, a delete that asks whether to also remove files, and a Dashboard entry in the user menu. Requires GamesDownloader v1.0.23+.\nv1.0.2: Package files - bundle a game's downloaded files into archives (per platform, extras, DLC, or one combined archive) from the Games and GOG detail, through the shared GamesDownloader v1.0.19 packaging API.\nv1.0.1: Add game, upload file, upload from URL and add-via-torrent now target the custom library you are viewing (its folder and membership), through the shared GamesDownloader v1.0.17 library API.\nv1.0.0: Initial release - storefront home (hero carousel with local trailers, category shelves, collection showcases), Steam-style game and GOG detail pages, complete Retro experience (console picker with fanart hero, platform libraries, ROM detail with in-browser play, scrape-all with a fill-missing mode), global search and 7 color skins in 8 languages. Requires GamesDownloader v1.0.15+."
+    },
+    {
+      "id": "pcports",
+      "name": "PC Ports",
+      "description": "Catalogue of open-source console ports, recompilations and emulators published as GitHub releases, offered as a storefront your server can download from. The list is maintained by SirDiabo (GHLAppList) and modelled on the GithubLauncher desktop app (https://github.com/SirDiabo/GithubLauncher); GamesDownloader hosts nothing and is not responsible for the listed software or its availability, it only bridges that list into a server storefront.",
+      "version": "1.0.0",
+      "author": "60plus",
+      "type": "catalog",
+      "category": "Storefront",
+      "icon": "https://raw.githubusercontent.com/60plus/gd3-plugin-store/main/icons/pc-ports-logo.png",
+      "screenshots": [
+        "https://github.com/60plus/gd3-plugin-store/releases/download/pcports-v1.0.0/pcports-store.png",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/pcports-v1.0.0/pcports-detail.png",
+        "https://github.com/60plus/gd3-plugin-store/releases/download/pcports-v1.0.0/pcports-download.png"
+      ],
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/pcports-v1.0.0/pcports-v1.0.0.zip",
+      "downloadSize": 9345,
+      "gdVersionMin": "1.0.27",
+      "repository": "https://github.com/60plus/gd3-plugin-store",
+      "changelog": "v1.0.0: Initial release - a storefront for open-source console ports, recompilations and emulators published as GitHub releases, with metadata scraping and per-OS builds. The list is maintained by SirDiabo (GHLAppList) and modelled on the GithubLauncher desktop app. Requires GamesDownloader 1.0.27.",
+      "updated": "2026-08-09"
     }
   ]
 }
