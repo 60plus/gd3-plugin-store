@@ -103,7 +103,7 @@
       "id": "vapor",
       "name": "Vapor Theme",
       "description": "Storefront theme in the spirit of big game launchers: hero carousel with trailers, category shelves, rich hover cards and animated tiles. Includes its own Steam-style game and GOG detail pages, a complete Retro experience (console picker, per-platform libraries, ROM detail pages with in-browser play) and full global search. 7 color skins, translated to 8 languages, arranged on the page itself",
-      "version": "1.0.14",
+      "version": "1.0.15",
       "author": "60plus",
       "type": "theme",
       "category": "Theme",
@@ -121,12 +121,12 @@
         "https://i.postimg.cc/D043St1W/Retro.webp",
         "https://i.postimg.cc/SsvpNyYc/Store-GOG.webp"
       ],
-      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.14/vapor-v1.0.14.zip",
-      "downloadSize": 222556,
-      "gdVersionMin": "1.0.32",
+      "downloadUrl": "https://github.com/60plus/gd3-plugin-store/releases/download/vapor-v1.0.15/vapor-v1.0.15.zip",
+      "downloadSize": 224363,
+      "gdVersionMin": "1.0.33",
       "repository": "https://github.com/60plus/gd3-vapor",
-      "updated": "2026-08-23",
-      "changelog": "v1.0.14: a ROM's checksums are listed among its facts, and the button that computes them confirms when it has.\n\nv1.0.13: a rating that is not a number is no longer shown at all instead of rendering as NaN.\n\nv1.0.12: removing a library game asks for a tick first, the number of files that go with a disc is stated on the question that decides them, and a file with no checksums gets a button that computes them. Requires GamesDownloader 1.0.32.\n\nv1.0.11: Deleting a ROM or a GOG game now asks you to tick a box before the button will work. The saves, the artwork and the library entry go on that first answer, whichever way you answer the question about files afterwards, so that is where the question belongs. Clearing a whole library's metadata asks the same way."
+      "updated": "2026-08-28",
+      "changelog": "v1.0.15: Play loads a whole multi-disc title and the size counts every disc; a playlist can be written for a set that came without one; discs convert to CHD from the ROM page. Requires GamesDownloader 1.0.33."
     },
     {
       "id": "pcports",
